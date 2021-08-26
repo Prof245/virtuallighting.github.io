@@ -1,0 +1,138 @@
+
+<html>
+<head>
+
+<style>
+/*.abc img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}*/
+
+
+
+.container img {
+  width: 100%;
+  height: auto;
+
+}
+
+
+h1
+{
+
+color:Tomato;
+text-align:right;
+
+}
+body{
+   position:absolute;
+ padding:0px;
+ margin:0px; 
+overflow:hidden;
+
+}
+
+html{
+   position:absolute;
+ margin:0px;
+  padding:0px;
+}
+.container #btn1
+{
+left:60%;
+}
+.container #btn2
+{
+left:60%;
+}
+.container #btn3
+{
+left:60%;
+}
+.container #btn4
+{
+left:60%;
+}
+.container #btn5
+{
+left:60%;
+}
+.container #btn6
+{
+left:60%;
+}
+.container #btn7
+{
+left:83%;
+}
+
+</style>
+
+</head>
+<body >
+
+
+<h1 >Lighting Ceremony</h1>
+  <img src="new.png"   height="570" width="400" style="position:relative;left:30%;top:10%;">
+
+<div class="container" >
+ <p align="right"><input type="button"  id ="btn1" value="Client1"  style="position:relative;background-color: #4CAF50;bottom:460px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+<p align="right"><input type="button"  id="btn2" value="Client2"  style="position:relative;background-color: #4CAF50;bottom:440px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+<p align="right"><input type="button" id="btn3" value="Client3"  style="position:relative;background-color: #4CAF50;bottom:420px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+<p align="right"><input type="button" id="btn4" value="Client4"  style="position:relative;background-color: #4CAF50;bottom:400px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+<p align="right"><input type="button" id="btn5" value="Client5"  style="position:relative;background-color: #4CAF50;bottom:380px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+<p align="right"><input type="button" id="btn6" value="Client6"  style="position:relative;background-color: #4CAF50;bottom:360px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+<p align="right"><input type="button" id="btn7"  value="Reset"  style="position:relative;background-color: #4CAF50;bottom:600px;border-radius: 8px;padding: 8px 7px;font-weight:bold;cursor:pointer;color:white;"/></p>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+       let img=document.querySelector('img');
+let btn1=document.querySelector('#btn1');
+let btn2=document.querySelector('#btn2');
+btn1.addEventListener('click',()=>{
+img.src='lamp1.jpg';
+}) 
+btn2.addEventListener('click',()=>{
+img.src='lamp2.jpg';
+}) 
+btn3.addEventListener('click',()=>{
+img.src='lamp3.jpg';
+}) 
+btn4.addEventListener('click',()=>{
+img.src='lamp1.jpg';
+}) 
+btn5.addEventListener('click',()=>{
+img.src='lamp2.jpg';
+}) 
+btn6.addEventListener('click',()=>{
+img.src='lamp3.jpg';
+}) 
+btn7.addEventListener('click',()=>{
+img.src='new.png';
+}) 
+$(document).ready(function() {
+
+
+	
+factor_x = ($(window).width()) / WIDTH;
+temp = (($(window).width())*HEIGHT/ WIDTH);
+factor_y = temp/HEIGHT;
+('html').css("transform","scale("+factor_x+","+factor_y+")");  
+//For Firefox
+$('html').css("-moz-transform","scale("+factor_x+","+factor_y+")"); 
+      
+//For Google Chrome
+$('html').css("-webkit-transform","scale("+factor_x+","+factor_y+")");
+
+//For Opera
+$('html').css("-o-transform","scale("+factor_x+","+factor_y+")");
+
+});
+</script>
+
+</body>
+</html>
+
